@@ -1,0 +1,63 @@
+body{
+    background-color: gainsboro;
+    width: border-box;
+    height: border-box;
+
+}
+#menu{
+    background-image: url("../image/menu.jpg");
+    width: 50%;
+    height: 60px;
+    background-position: center;
+    align-content: center;
+    color: white;
+    border: 1px solid white;
+    padding: auto;
+}
+.coffee{
+    background-image: url("../image/cf_back.jpeg");
+    width: 50%;
+    height: 60px;
+}
+#cf{
+    width: 95px;
+    height: 40px;
+    border: 1px solid black;
+    align-self: center;
+}
+#cf1,#cf2,#cf3{
+    width: 300px;
+    height: 200px;
+    align-items: center;
+}
+#tea{
+    width: 600px;
+    height: 300px;
+}
+#food{
+    border: 1px solid white;
+    width: 70px;
+    height: 40px;
+}
+#cake,#sandwich{
+    width: 300px;
+    height: 200px;
+}
+
+.btn{
+    font-size: 17px;
+    margin: auto;
+    padding: auto;
+    width: 70px;
+    height: 90px;
+}
+
+#teatitle{
+    border: 1px solid white;
+    width: 70px;
+    height: 40px;
+}
+#showCF{
+    width: 300px;
+    height: 200px;
+}
