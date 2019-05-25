@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Staff login</title>
+    <link rel="stylesheet" href="../css/staff_login.css">
+    <style>
+
+    </style>
+</head>
+<body>
+
+<form id="staff_form" action='staff_login.php' method="POST">
+    <table align="center">
+        <tr>
+            <h1 align="center"> Welcome to CoffeeBuzz family</h1>
+        </tr>
+        <tr>
+            <td>
+                <label for="staffname"></label> <div class="word">staff name:</div>
+            </td>
+            <td>
+                <input id="staffname" type="text"  checked="staffname" name="staffname" placeholder=" entry staff name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="staffpassword"></label> <div class="word">staff password:</div>
+            </td>
+            <td>
+                <input id="staffpassword" type="password" checked="staffpassword" name="staffpassword" placeholder=" staff password">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center" rowspan="2">
+                <input id="staffsubmit" type="submit" name="staffsubmit" value="log in  ">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

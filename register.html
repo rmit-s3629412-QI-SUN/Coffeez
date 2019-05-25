@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register_page</title>
+    <link rel="stylesheet" href="../css/register.css">
+
+    <style>
+        #phone{
+            width: 251px;
+            height: 32px;
+            border: 1px solid grey;
+            border-radius: 5px;
+            padding-left: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="rg_layout">
+    <div class="rg_left">
+        <p>new member</p>
+        <p>register</p>
+    </div>
+    <div class="rg_center">
+        <form ACTION="register.php" method="post">
+            <table >
+                <tr>
+                    <td class="tb_left"><label for="username"><div class="word">username</div></label></td>
+                    <td class="tb_right"><input id="username" class="word"  type="text"   name="username" placeholder=" entry username"></td>
+                </tr>
+                <tr>
+                    <td class="tb_left"><label for="password"><div class="word" >password</div></label></td>
+                    <td class="tb_right"><input id="password" class="word" type="password"  c name="password" placeholder="entry password"></td>
+                </tr>
+                <tr>
+                    <td class="tb_left"><label for="phone"><div class="word">telphone</div></label>
+                    <td class="tb_right"><input  id="phone"  type="text"  name="phone" placeholder="entry phone"></td>
+                </tr>
+                <tr>
+                    <td class="tb_left"><div class="word">gender</div></td>
+                    <td class="tb_right"><input type="radio" name="gender" value="male"> male <input type="radio" name="gender" value="female"> female </td>
+
+                </tr>
+                <tr >
+                    <td colspan="2" align="center">
+                        <input id="submit" type="submit" name="submit" value="submit">
+                        <script language='javascript' type='text/javascript'>
+                            var openbtn = document.getElementById('submit');
+
+                            openbtn.onclick = function f1() {
+                                newWindow = 'login.html';
+
+                                setTimeout(newWindow, 5000)
+                            }
+                        
+
+                        </script>
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+
+    </div>
+    <div class="rg_right">
+        <p class="word">already have a account? <a href="login.html" id="a_login"><div class="word">log in</div></a></p>
+    </div>
+                </div>
+
+</body>
+</html>
