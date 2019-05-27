@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>menu</title>
+    <link rel="stylesheet" href="../css/new_menu.css">
+    <style>
+        .input{
+            width: 251px;
+            height: 32px;
+            border: 1px solid grey;
+            border-radius: 5px;
+            padding-left: 5px;
+        }
+    </style>
+</head>
+<body>
+<center><img id="showCF" src="../image/cf_back1.jpg" alt="环境" ></center>
+<script>
+    var num = 1;
+    function f() {
+        num++;
+        if(num > 4){
+            num = 1;
+        }
+        var img = document.getElementById('showCF');
+        img.src = "../image/cf_back" + num + ".jpg";
+    }
+    setInterval(f,3000);
+</script>
+<center><h1 id="menu" >WELCOME TO COFFEE SHOP</h1></center>
+<table align="center">
+    <tr>
+        <td>
+            <input id="registerPage" class='btn' type="button" value="register">
+            <script>
+                var registerPage = document.getElementById('registerPage')
+                registerPage.onclick = function () {
+                    window.location.href = 'register.html'
+                }
+            </script>
+            <input id="loginPage" class="btn" type="button" value="log in">
+            <script>
+                var login = document.getElementById('loginPage')
+                login.onclick = function () {
+                    window.location.href = 'login.html'
+                }
+            </script>
+        </td>
+
+    </tr>
+</table>
+
+<form action="" method="post">
+    <table class="coffee" align="center">
+        <tr >
+            <td></td>
+            <td><center><h1 id="cf">COFFEE</h1></center></tr></td>
+        <td></td>
+        <tr>
+            <td>
+                <img id="cf1" src="../image/coffee1.jpeg" alt="cf1">
+            </td>
+            <td>
+                <img id="cf2" src="../image/coffee2.jpeg" alt="cf1">
+            </td>
+            <td>
+                <img id="cf3" src="../image/coffee3.jpeg" alt="cf1">
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <div>Espresso</div>
+                <div>how many you want?</div>
+                <div>size: small</div>
+            </td>
+            <td align="center">
+                <div>Double espresso</div>
+                <div>how many you want?</div>
+                <div>size: small</div>
+            </td>
+            <td align="center">
+                <div>Latte</div>
+                <div>how many you want?</div>
+                <div>size: large</div>
+            </td>
+        <tr><td colspan="3"><hr color="black" ></td></tr>
+        <tr>
+            <td align="center">
+                <div>Cappuccino</div>
+                <div>how many you want?</div>
+                <div>size:</div>
+                <input id='capp_medium' type="radio" value="medium"> medium
+                <input id='capp_large' type="radio" value="large"> large
+            </td>
+            <td align="center">
+                <div>long black</div>
+                <div>how many you want?</div>
+                <div>size:</div>
+                <input id='long_medium' type="radio" value="medium"> medium
+                <input id='long_large' type="radio" value="large"> large
+            </td>
+            <td align="center">
+                <div>hot chocolate</div>
+                <div>how many you want?</div>
+                <div>size:</div>
+                <input id='hot_medium' type="radio" value="medium"> medium
+                <input id='hot_large' type="radio" value="large"> large
+            </td>
+        </tr>
+        <tr><td colspan="3"><hr color="black" ></td></tr>
+        <tr><td colspan="3"><hr color="black" ></td></tr>
+        <tr><td colspan="3"><hr color="black" ></td></tr>
+        <tr><td colspan="3"><center><h1 id="teatitle">TEA</h1></center></td></tr>
+        <tr><td colspan="3"><center><img id="tea" src="../image/tea.jpeg" alt="tea_back"></center></td></tr>
+        <tr>
+            <td align="center">
+                <div>Earl Grey</div>
+                <div>how many you want?</div>
+                <div>size:</div>
+                <input id='earl_medium' type="radio" value="medium"> medium
+                <input id='earl_large' type="radio" value="large"> large
+            </td>
+            <td align="center">
+                <div>Assam</div>
+                <div>how many you want?</div>
+                <div>size:</div>
+                <input id='assam_medium' type="radio" value="medium"> medium
+                <input id='assam_large' type="radio" value="large"> large
+            </td><td align="center">
+            <div>Green</div>
+            <div>how many you want?</div>
+            <div>size:</div>
+            <input id='green_medium' type="radio" value="medium"> medium
+            <input id='green_large' type="radio" value="large"> large
+        </td>
+        </tr>
+        <tr><td colspan="3"><hr color="black" ></td></tr>
+        <tr>
+            <td align="center">
+                <div>Mint</div>
+                <div>how many you want?</div>
+                <div>size:</div>
+                <input id='mint_medium' type="radio" value="medium"> medium
+                <input id='mint_large' type="radio" value="large"> large
+            </td>
+        </tr>
+        <tr><td colspan="3"><hr color="black" ></td></tr>
+        <tr><td colspan="3"><hr color="black" ></td></tr>
+        <tr><td colspan="3"><hr color="black" ></td></tr>
+        <tr>
+            <td></td>
+            <td align="center"><h1 id="food">FOOD</h1></td></tr>
+        <td></td>
+        <tr>
+            <td align="center" colspan="3">
+                <img id="sandwich" src="../image/sandwich.jpeg" alt="sandwich">
+                <img id="cake" src="../image/cake.jpeg" alt="cake">
+            </td>
+        <tr>
+            <td align="center">
+                <div class="word_white">sandwich</div>
+                <div class="word_white">how many you want?</div>
+            </td>
+            <td align="center">
+                <div class="word_white">cake</div>
+                <div class="word_white">how many you want?</div>
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
